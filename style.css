@@ -1,0 +1,410 @@
+@font-face {
+    font-family: 'Bogle';
+    src: url('recursos/fuente/BOGLEREGULAR.OTF');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: #0071dc;
+    top: 0;
+    height: 63px;
+    z-index: 5;
+    position: fixed;
+    justify-content: center;
+}
+
+header button {
+    background-color: #0071dc;
+    min-width:fit-content;
+    padding: 10px 15px;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+header button:hover {
+    background-color: #004f9a;
+}
+
+.icono {
+    width: fit-content;
+    height: fit-content;
+}
+
+.header__content {
+    display: flex;
+    margin: 0 230px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__content__left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header__content__right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.header__search {
+    position: relative;
+    min-width: 200px;
+    width: 24vw;
+    display: flex;
+    align-items: center;
+}
+
+.search__input {
+    border: 1px solid #0071dc;
+    border-radius: 34px;
+    color: black;
+    padding: 10px;
+    width: 100%;
+}
+
+.search__submit {
+    padding-top: 5px;
+    padding-right: 5px;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 34px;
+}
+
+.header__carro {
+    cursor: pointer;
+}
+
+.page {
+    margin-top: 63px;
+    width: 100%;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #292929;
+}
+.categorias {
+    display: flex;
+    gap: 10px;
+}
+
+.card-circle {
+    width: 240px;
+    height: 216px;
+    text-align: center;
+}
+
+.card-circle img {
+    width: 160px;
+    object-fit: cover;
+}
+
+.seccion {
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.seccion__text{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.seccion__text p {
+    color: rgb(109, 110, 113);
+}
+
+.azul {
+    color: #0071dc;
+}
+
+.content-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.content-2 p {
+    color: black;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filtro {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 12px;
+    gap: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+#marcas {
+    width: 310px;
+    height: 300px;
+}
+
+.scroll {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox label{
+    color: black;
+}
+
+.checkbox div {
+    color: black;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+    gap: 20px;
+}
+
+.filtros-extra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 12px;
+    height: 38px;
+    align-items: center;
+    background-color: white;
+}
+
+.filtros-extra span {
+    color: black;
+}
+
+
+
+.filtros__opciones {
+    display: flex;
+    gap: 15px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 399px;
+    background-color: white;
+    box-shadow: 0 0 12px 0 #e6e5e5;
+    border-radius: 16px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card__img {
+    width: fit-content;
+    height: 200px;
+    margin: auto;
+}
+
+.card__img img {
+    margin: auto;
+}
+
+.divider-shadow {
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-blend-mode: multiply;
+    background-image: linear-gradient(rgba(249, 249, 249, 0), rgba(0, 0, 0, 0.12));
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 10px;
+}
+
+.title {
+    font-size: 16px;
+    color: #6d6e71;
+}
+
+.black-bold {
+    color: black;
+    font-weight: bold;
+}
+
+
+.price {
+    color: #565656;
+    display: flex;
+    align-items: center;
+}
+
+
+.ahorro {
+    font-size: 12px;
+    background-color: #E6F1FC;
+    padding: 2px 4px;
+    border-radius: 2px;
+    color: #0071DC;
+}
+
+.regular {
+    font-size: 12px;
+    color: #74767C;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.card__button {
+    display: flex;
+    justify-content: center;
+}
+
+.add {
+    position: absolute;
+    bottom: 10px;
+    width: 176px;
+    height: 32px;
+    border: none;
+    background-color: white;
+    color: #0071dc;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 25%);
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add:hover {
+    transform: scale(1.05);
+}
+
+.footer__secciones {
+    width: 100%;
+    color: white;
+    display: flex;
+    background-color: #0071dc;
+    gap: 100px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.footer__seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    z-index: 5;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #0000007a;
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+}
+
+.logos img {
+    width: 18px;
+}
+
+.marcas {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.footer__info {
+    font-size: 12px;
+}
+
+
