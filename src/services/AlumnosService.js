@@ -6,7 +6,6 @@ class AlumnoService {
 
     constructor() {
         this.alumnos = ref([]);
-        this.status = 'pending';
     }
 
     addAlumno(alumno) {
@@ -41,12 +40,21 @@ class AlumnoService {
         return this.alumnos.value.filter(alumno => this.getPromedioByAlumno(alumno.nombre) >= 40);
     }
 
+    async postAlumno(alumno) {
+        try {
+            const url = 'http://localhost:3000/alumnos';
+            const response = await axios.post(url, alumno);
+            this.addAlumno(response.data);
+        } catch (error) {
+            console.error('Error al añadir un alumno:', error);
+        }
+    }
+
     async fetchAlumnos() {
         try {
             const url = 'http://localhost:3000/alumnos';
             const response = await axios.get(url);
             this.alumnos.value = response.data;
-            
         } catch (error) {
             console.error('Error al obtener los alumnos:', error);
         }
